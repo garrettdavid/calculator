@@ -45,6 +45,7 @@ $(document).ready(function() {
   });
 
   $("#equals").click(function() {
+    $("#total").html(total);
     var value = total.toString();
     display = value;
     update(display);
@@ -52,6 +53,6 @@ $(document).ready(function() {
 
 });
 
-function update(display) {
-  $("#display").html(display);
+function update(data) {
+  $("#display").html(data);
 }
